@@ -48,8 +48,13 @@ nav ul li a{
 }
 div.hero{
     margin: 50px 250px;
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
+}
+.hero_text{
+    padding-top: 70px;
+    display: inline-block;
+    float: left;
 }
 div.hero h3{
     font-family: 'Times New Roman', Times, serif;
@@ -85,6 +90,8 @@ div.hero button{
     cursor: pointer ;
 }
 .mobile img {
+    padding-left: 100px;
+    display: inline-block;
     float: right;
 }
 div.about{
@@ -119,16 +126,25 @@ div.features h1{
     color: #f42c46;
 }
 div.product{
-    margin: 50px 220px 200px;
-    display: inline-grid;
-    grid-template-areas: "one one one one";
+    margin: 50px 220px 100px;
+    /* display: inline-grid;
+    grid-template-areas: "one two three four";
     grid-template-rows: 50px;
-    grid-gap: 100px;
+    grid-gap: 100px; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
     
 }
+.one, .two, .three, .four{
+    display: inline-block;
+    flex-grow: 1;
+    height: 200px;
+    width: 100px;
+    text-align: center;
+
+}
 div.product h5{
-    display: flex;
-    justify-content: center;
     align-items: center;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
@@ -137,6 +153,18 @@ div.product h5{
     margin: auto;
 }
 .one img{
+    align-items: center;
+    padding-bottom: 30px;
+}
+.two img{
+    align-items: center;
+    padding-bottom: 30px;
+}
+.three img{
+    align-items: center;
+    padding-bottom: 30px;
+}
+.four img{
     align-items: center;
     padding-bottom: 30px;
 }
@@ -182,8 +210,6 @@ form button{
     font-stretch: semi-condensed;
     cursor: pointer ; 
 }
-form input, button{
-}
 footer h2, div.social{
     display: inline-block;
     margin: 0 35px 10px;
@@ -221,4 +247,32 @@ footer div.social img{
 .hover-underline:hover::after{
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+@media (max-width:768px) {
+    body{
+        width: 100%;
+    }
+    nav ul{
+        display: none;
+    }
+    .hero{
+        display: block;
+    }
+    .hero img{
+        display: none;
+    }
+    .hero_text {
+        text-align: center;
+        margin: auto;
+
+    }
+    .product{
+        display: flex;
+        /* grid-template-columns: "one""two" "three" "four";
+        grid-template-areas: " one " 
+                            " two "
+                            " three "
+                            " four "; */
+    }
 }
