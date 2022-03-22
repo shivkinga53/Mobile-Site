@@ -185,7 +185,7 @@ div.product h5{
     font-weight: 600;
     font-size: 1.5rem;
 }
-hr{
+hr.tail{
     border: 0;
     margin: 0 150px 70px;
     height: 1px;
@@ -276,12 +276,16 @@ footer div.social img{
     }
     div.hero{
         padding: 0;
-        margin: 0 0 100px;
+        margin: 50px 0 50px ;
+        display: block;
+        align-items: center;
     }
     div.hero img{
         display: none;
     }
     div.hero_text{
+        display: contents;
+        width: 100px;
         padding: 0;
     }
     div.hero_text h3, h1, h5, button{
@@ -307,22 +311,31 @@ footer div.social img{
         height: 30px;
     }
     div.about{
-        margin: 0 50px;
+        margin: 0 30px;
         text-align: center;
     }
     div.about h3{
-        font-size: 0.8rem;
+        padding: 30px;
+        font-size: 0.7rem;
     }
     div.about h2{
-        padding: 0 0 75px;
+        padding: 0 30px 60px;
         font-size: 1.2rem;
     }
-    .product{
-        /* display: flex; */
-        /* grid-template-columns: "one""two" "three" "four";
-        grid-template-areas: " one " 
-                            " two "
-                            " three "
-                            " four "; */
+    div.features{
+        margin-top: 50px;
+    }
+    div.features h1{
+        font-size: 1.2rem;
+    }
+    div.product{
+        align-items: center;
+        margin: 0 100px;
+    }
+    hr.tail{
+        width: 100%;
+        padding: 0 ;
+        margin: 30px 0 30px ;
+        text-align: center;
     }
 }
