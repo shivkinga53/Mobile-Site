@@ -51,7 +51,7 @@ div.hero{
     display: inline-flex;
     justify-content: space-between;
 }
-.hero_text{
+div.hero_text{
     padding-top: 70px;
     display: inline-block;
     float: left;
@@ -90,9 +90,11 @@ div.hero button{
     cursor: pointer ;
 }
 hr.head{
-    border-top: 1px solid #f42c46;
+    border: none;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f3efce, #f42c46, #f3efce);
     width: 100%;
-    padding: 0;
+    padding: 0 ;
     margin: 0 ;
     text-align: center;
 }
@@ -184,7 +186,11 @@ div.product h5{
     font-size: 1.5rem;
 }
 hr{
+    border: 0;
     margin: 0 150px 70px;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, #f3efce, #f42c46, #f3efce);
+
 }
 .contact h2{
     margin-bottom: 25px;
@@ -305,10 +311,11 @@ footer div.social img{
         text-align: center;
     }
     div.about h3{
-        
+        font-size: 0.8rem;
     }
     div.about h2{
-
+        padding: 0 0 75px;
+        font-size: 1.2rem;
     }
     .product{
         /* display: flex; */
