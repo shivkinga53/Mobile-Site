@@ -89,6 +89,13 @@ div.hero button{
     font-stretch: semi-condensed;
     cursor: pointer ;
 }
+hr.head{
+    border-top: 1px solid #f42c46;
+    width: 100%;
+    padding: 0;
+    margin: 0 ;
+    text-align: center;
+}
 .mobile img {
     padding-left: 100px;
     display: inline-block;
@@ -249,9 +256,11 @@ footer div.social img{
     transform-origin: bottom left;
 }
 
-@media (max-width:768px) {
-    nav .logo{
-        width: 50px;
+@media (max-width:480px) {
+    nav div.logo{
+        font-size: 1.5rem;
+        margin-left: 30px;
+
     }
     body{
         width: 100%;
@@ -259,19 +268,50 @@ footer div.social img{
     nav ul{
         display: none;
     }
-    .hero{
-        display: block;
+    div.hero{
+        padding: 0;
+        margin: 0 0 100px;
     }
-    .hero img{
+    div.hero img{
         display: none;
     }
-    .hero_text {
+    div.hero_text{
+        padding: 0;
+    }
+    div.hero_text h3, h1, h5, button{
         text-align: center;
+    }
+    div.hero_text h3, h1, h5{
+        font-size: 1rem;
+    }
+    div.hero_text h3{
+        margin-bottom: 20px;
+    }
+    div.hero_text h1{
+        font-size: 1.5rem;
+    }
+    div.hero_text h5{
+        font-size: 0.7rem;
+    }
+    div.hero_text button{
+        display: block;
         margin: auto;
+        font-size: 0.8rem;
+        width: 120px;
+        height: 30px;
+    }
+    div.about{
+        margin: 0 50px;
+        text-align: center;
+    }
+    div.about h3{
+        
+    }
+    div.about h2{
 
     }
     .product{
-        display: flex;
+        /* display: flex; */
         /* grid-template-columns: "one""two" "three" "four";
         grid-template-areas: " one " 
                             " two "
