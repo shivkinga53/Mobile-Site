@@ -242,7 +242,6 @@ footer h2{
 footer div.social{
     overflow: hidden;
     float: right;
-    position: absolute;
     margin-right: 50px;
 }
 footer div.social img{
