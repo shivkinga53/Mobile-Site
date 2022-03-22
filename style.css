@@ -250,6 +250,9 @@ footer div.social img{
 }
 
 @media (max-width:768px) {
+    nav .logo{
+        width: 50px;
+    }
     body{
         width: 100%;
     }
