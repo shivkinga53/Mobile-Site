@@ -254,7 +254,7 @@ footer div.social img{
     width: 30px;
     margin-left: 15px;
 }
-.hover-underline::after{
+a.hover-underline::after{
     content: '';
     position: absolute;
     width: 100%;
@@ -266,7 +266,19 @@ footer div.social img{
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
-.hover-underline:hover::after{
+a.active::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(1);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #f42c46;
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+}
+a.hover-underline:hover::after{
     transform: scaleX(1);
     transform-origin: bottom left;
 }
@@ -352,10 +364,10 @@ footer div.social img{
     }
     footer h2{
         font-size: 0.8rem;
-        margin-left: 25px;
+        margin: 0 0 0 25px;
     }
     footer div.social{
-        margin-right: 25px;
+        margin: 0 25px 0 0;
     }
     footer div.social img{
         height: 20px;
