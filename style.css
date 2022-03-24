@@ -44,10 +44,28 @@ nav ul li a{
     margin: 10px 20px 5px;
     border-radius: 5px;
     color: #042c47;
-    /* transition: .25s ease-out; */
 }
-
-
+nav div.hamburger{
+    display: none;
+    cursor: pointer;
+    float: right;
+    width: 50px;
+    height: 30px;
+    align-items: center;
+    vertical-align: middle;
+    top: 0;
+    right: 0;
+    margin: 25px 25px 0 0; 
+}
+span.bar{
+    display: block;
+    width: 30px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #f42c46;
+}
 div.hero{
     margin: 50px 250px;
     display: inline-flex;
@@ -72,10 +90,10 @@ div.hero h1{
 }
 div.hero h5{
     font-family: 'Times New Roman', Times, serif;
-    font-weight: 300;
+    font-weight: 200;
     font-style: italic;
     color: #042c47;
-    opacity: 75%;
+    opacity: 100%;
     margin: 15px 0;
 }
 div.hero button{
@@ -285,7 +303,7 @@ a.hover-underline:hover::after{
     transform-origin: bottom left;
 }
 
-@media (max-width:480px) {
+@media (max-width:768px) {
     nav div.logo{
         font-size: 1.5rem;
         margin-left: 30px;
@@ -294,8 +312,38 @@ a.hover-underline:hover::after{
     body{
         width: 100%;
     }
-    nav ul{
-        display: none;
+    nav div.hamburger{
+        display: flex;
+        justify-content: center;
+        display: inline-block;
+    }
+    nav div.hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    nav div.hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    nav div.hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 80px;
+        flex-direction: column;
+        background-color: #f3efce;
+        width: 100%;
+        text-align: center  ;
+        transition: 0.3s;
+    }
+    .nav-menu ul li{
+        margin: 16px 0;
+    }
+    nav ul li{
+        display: block;
+    }
+    .nav-menu.active{
+        left: 0;
     }
     div.hero{
         padding: 0;
@@ -357,6 +405,8 @@ a.hover-underline:hover::after{
     div.product{
         align-items: center;
         margin: 0 50px;
+    }
+    .offer{
     }
     hr.tail{
         width: 100%;
