@@ -71,7 +71,9 @@ div.hero{
     margin: 50px 250px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+
     gap: 50px;
 }
 div.hero_text{
@@ -424,5 +426,10 @@ a.hover-underline:hover::after{
     footer div.social img{
         height: 20px;
         margin-left: 0;
+    }
+}
+@media (min-width: 1367px) and (max-width: 1920px)  {
+    div.hero{
+        gap: 100px;
     }
 }
