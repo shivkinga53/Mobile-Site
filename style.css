@@ -69,8 +69,10 @@ span.bar{
 }
 div.hero{
     margin: 50px 250px;
-    display: inline-flex;
-    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
 }
 div.hero_text{
     padding-top: 70px;
