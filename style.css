@@ -78,7 +78,6 @@ div.hero{
 }
 div.hero_text{
     padding-top: 70px;
-    display: inline-block;
     float: left;
 }
 div.hero h3{
@@ -125,7 +124,6 @@ hr.head{
 }
 .mobile img {
     padding-left: 100px;
-    display: inline-block;
     float: right;
     animation-name: floating;
     animation-duration: 3s;
